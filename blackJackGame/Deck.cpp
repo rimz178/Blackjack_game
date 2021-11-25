@@ -1,4 +1,4 @@
-#include "carddeck.h"
+#include "Deck.h"
 
 CardDeck::CardDeck()
 {
