@@ -32,23 +32,25 @@ int Card::GetFaceValue()
    return 11;
 }
 void Card::Print()
-{   if (Rank <= Ten)
+{
+    if (Rank <= Ten)
         std::cout<<Rank;
+
     else if (Rank == Jack)
-        std::cout<< "J ";
+        std::cout<< "Jack";
     else if (Rank == Queen)
-        std::cout<< "Q ";
+        std::cout<< "Queen";
     else if (Rank == King)
-        std::cout<< "K ";
+        std::cout<< "King";
     else
-        std::cout<< " A ";
+        std::cout<< "Ace";
 
     if (Suit == Heart)
-        std::cout << " H ";
+        std::cout << " Heart";
     else if (Suit ==Diamonds )
-        std::cout << " D ";
+        std::cout << " Diamnond";
     else if (Suit ==Clubs )
-        std::cout << " C ";
+        std::cout << " Club";
     else if (Suit ==Spades )
-        std::cout << " S ";
+        std::cout << " Spade";
 }
