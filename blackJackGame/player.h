@@ -3,25 +3,30 @@
 #include<iostream>
 #include <vector>
 #include <card.h>
-
+#include <hand.h>
 #include<string>
 using namespace std;
-class Player
-{
+
+class Player {
+
 public:
 
     Player();
-    ~Player();
+
+   ~Player();
+
+ // void clear();
+
     void setPlayerName(string nam);
 
     string  getPlayerName();
-    vector<Card> getHand(void);
-
-
+    //vector<Card> getHand(void);
 
 private:
    string UserName;
-   vector<Card> hand;
+ //Card playerCard;
+
+   //vector<Card> hand;
 
 };
 

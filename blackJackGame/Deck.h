@@ -4,8 +4,7 @@
 #include <card.h>
 #include <vector>
 
-class CardDeck
-{
+class CardDeck {
 public:
     CardDeck();
     ~CardDeck();

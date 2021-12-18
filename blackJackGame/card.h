@@ -5,20 +5,17 @@
 
 
 
-class Card
-{
+class Card {
 public:
     // Create suits.
-      enum Suits
-      {
+      enum Suits {
           Heart = 3,
           Diamonds,
           Clubs,
           Spades,
        };
       //Create ranks.
-      enum Ranks
-      {
+      enum Ranks {
         Two = 2,
         Three,
         Four,

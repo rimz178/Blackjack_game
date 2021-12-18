@@ -5,8 +5,8 @@
 #include "ctime"
 using namespace std;
 
-int main()
-{
+int main() {
+
     srand(time(nullptr));
     Player mc;
     CardDeck deck;
@@ -21,8 +21,6 @@ int main()
     cout << "Hello "<< mc.getPlayerName()<<endl;
 
     deck.Shuffle();
-
-
 
     //deck.Print();
     system("pause");

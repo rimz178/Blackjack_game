@@ -7,22 +7,23 @@ Card::Card(Ranks RANK, Suits SUIT)
     : Suit(SUIT),
       Rank(RANK)
 {
+
 }
-Card::~Card()
-{
+Card::~Card() {
+
+    //--empty----
 }
 
-Card::Ranks Card::GetRank()
-{
+Card::Ranks Card::GetRank() {
     return Rank;
 }
-Card::Suits Card::GetSuit()
-{
+
+Card::Suits Card::GetSuit() {
     return Suit;
 }
 
-int Card::GetFaceValue()
-{
+int Card::GetFaceValue() {
+
     if(Rank <= Ten)
         return static_cast<int>(Rank);
 
@@ -31,8 +32,8 @@ int Card::GetFaceValue()
 
    return 11;
 }
-void Card::Print()
-{
+void Card::Print() {
+
     if (Rank <= Ten)
         std::cout<<Rank;
 
