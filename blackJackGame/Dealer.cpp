@@ -1,5 +1,5 @@
 #include "Dealer.h"
 
-computer::computer() {
+dealer::dealer() {
 
 }
