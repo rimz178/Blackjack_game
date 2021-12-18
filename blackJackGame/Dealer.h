@@ -2,9 +2,9 @@
 #define DEALER_H
 
 
-class computer {
+class dealer {
 public:
-    computer();
+    dealer();
 };
 
 #endif // DEALER_H
