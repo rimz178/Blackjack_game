@@ -1,12 +1,29 @@
 #ifndef CARD_H
 #define CARD_H
-//#include<iostream>
-//#include<string>
+#include<iostream>
+#include<string>
+#include <vector>
 
-
-
+using namespace std;
 class Card {
 public:
+    //Create ranks.
+    enum Ranks {
+      Ace =1,
+      Two = 2,
+      Three ,
+      Four ,
+      Five ,
+      Six ,
+      Seven ,
+      Eight ,
+      Nine ,
+      Ten ,
+      Jack ,
+      Queen ,
+      King ,
+     };
+
     // Create suits.
       enum Suits {
           Heart = 3,
@@ -14,40 +31,22 @@ public:
           Clubs,
           Spades,
        };
-      //Create ranks.
-      enum Ranks {
-        Two = 2,
-        Three,
-        Four,
-        Five,
-        Six,
-        Seven,
-        Eight,
-        Nine,
-        Ten,
-        Jack,
-        Queen,
-        King,
-        Ace,
-       };
 
+    friend ostream& operator<< (ostream& os, const Card aCard);
+    Card(Ranks r = Ace, Suits s = Spades, bool cardfaceup=true);
+     ~Card();
+    unsigned int GetCardValue() const;
+    void FlipCard();
 
-    Card(Ranks RANK,Suits SUIT);
-    virtual ~Card();
+    bool GetFace();
 
-    Suits GetSuit();
-    Ranks GetRank();
-
-    virtual int GetFaceValue();
-
-    void Print();
 
 
 
 private:
-
-   Suits Suit;
-   Ranks Rank;
+    Ranks cardRank;
+    Suits cardSuit;
+   bool cardIsFaceUp;
 };
 
 #endif // CARD_H

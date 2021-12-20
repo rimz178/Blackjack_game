@@ -10,23 +10,30 @@ using namespace std;
 class Player {
 
 public:
+    friend ostream& operator<< (ostream& os, const Player aPlayer);
 
+    Player(const string UserName);
     Player();
-
    ~Player();
 
- // void clear();
+    void clear();
+    string  getPlayerName() const;
+    void setPlayerName(string name);
+    bool isEmpty();
+    bool isHitting() const;
+    void FlipDealerFirstCard();
+    void ReceiveCard(Card PlayerCard);
+    bool isBusted() const;
+    unsigned int getCardTotal() const;
+    unsigned int getPosition() const;
 
-    void setPlayerName(string nam);
 
-    string  getPlayerName();
-    //vector<Card> getHand(void);
 
 private:
    string UserName;
- //Card playerCard;
+   Card playerCard;
+   Hand playerHand;
 
-   //vector<Card> hand;
 
 };
 

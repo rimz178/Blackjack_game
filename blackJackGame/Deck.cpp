@@ -2,8 +2,84 @@
 #include <iostream>
 #include <algorithm>
 #include <vector>
+#include <ctime>
 using namespace std;
 
+
+CardDeck::CardDeck(unsigned int dPos) : deckCurrentPos(dPos) {
+
+    ClearDeck();
+    PopulateDeck();
+    Shuffle();
+}
+CardDeck::~CardDeck(){
+
+}
+
+unsigned int CardDeck::CurrentPosition() {
+
+    return deckCurrentPos;
+}
+
+void CardDeck::ClearDeck() {
+
+    deckCurrentPos = 0;
+}
+void CardDeck::PopulateDeck() {
+
+    for (int s  = Card::Heart; s <= Card::Spades; s++) {
+
+        for (int r = Card::Ace; r <= Card::King; r++) {
+
+            AddCardToDeck(Card(static_cast<Card::Ranks>(r),
+                               static_cast<Card::Suits>(s)));
+      }
+   }
+}
+void CardDeck::Shuffle(){
+    srand(static_cast<unsigned int>(time(0)));
+        for (unsigned int i = 0; i < (MAX_DECK_CARDS - 1); i++)
+        {
+            int r = i + (rand() % (MAX_DECK_CARDS - i));
+            Card tempCard = deckCards[i];
+            deckCards[i] = deckCards[r];
+            deckCards[r] = tempCard;
+        }
+    }
+
+
+
+bool CardDeck::CardDeckIsEmpty() {
+
+    return (deckCurrentPos <=0);
+}
+
+void CardDeck::AddCardToDeck(Card pCard) {
+
+    deckCards[deckCurrentPos++]= pCard;
+}
+
+Card CardDeck::GiveCardToPlayer() {
+
+    if(!CardDeckIsEmpty())
+
+        return deckCards[--deckCurrentPos];
+     else {
+            deckCurrentPos =MAX_DECK_CARDS;
+            Shuffle();
+            return deckCards[--deckCurrentPos];
+        }
+
+}
+
+
+
+
+
+
+
+
+/*old code don't delete yet!!
 CardDeck::CardDeck()
     : deck() {
 
@@ -36,3 +112,4 @@ void CardDeck::Shuffle() {
 
     std::random_shuffle(deck.begin(), deck.end());
 }
+*/

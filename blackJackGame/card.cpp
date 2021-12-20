@@ -2,6 +2,37 @@
 #include <string>
 #include <iostream>
 
+Card::Card(Ranks r, Suits s, bool cardFaceUp):  cardRank(r), cardSuit(s), cardIsFaceUp(cardFaceUp) {
+
+}
+
+Card::~ Card(){
+
+}
+
+unsigned int Card:: GetCardValue() const {
+    int cardValue = 0;
+
+    if(cardIsFaceUp) {
+        cardValue = cardRank;
+
+        if(cardValue > 10 )
+            cardValue=10;
+    }
+    return cardValue;
+}
+
+void Card::FlipCard() {
+
+    cardIsFaceUp = !cardIsFaceUp;
+}
+
+bool Card::GetFace() {
+    return cardIsFaceUp;
+}
+
+
+/* old code!! don't delete
 Card::Card(Ranks RANK, Suits SUIT)
 
     : Suit(SUIT),
@@ -9,6 +40,7 @@ Card::Card(Ranks RANK, Suits SUIT)
 {
 
 }
+
 Card::~Card() {
 
     //--empty----
@@ -55,3 +87,4 @@ void Card::Print() {
     else if (Suit ==Spades )
         std::cout << " Spade";
 }
+*/
