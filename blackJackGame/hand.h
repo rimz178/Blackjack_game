@@ -21,7 +21,7 @@ public:
 private:
     unsigned int handCurrentPos;
     unsigned int playerCardPos;
-   Card handCards[MAX_HAND_CARDS];
+    Card handCards[MAX_HANDS_CARDS];
 };
 
 #endif // HAND_H

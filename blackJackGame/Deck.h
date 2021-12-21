@@ -3,14 +3,16 @@
 
 #include <card.h>
 #include <vector>
-const unsigned int MAX_HAND_CARDS = 10;
-const unsigned int MAX_DECK_CARDS = 52;
+
+// set max hand cards and max deck cards
+const unsigned int MAX_HANDS_CARDS = 10;
+const unsigned int MAX_DECKS_CARDS = 52;
 
 class CardDeck {
 public:
     CardDeck(unsigned int dPos = 0);
     ~CardDeck();
-    void ClearDeck();
+    void ClearedDeck();
     void PopulateDeck();
     void Shuffle();
     bool CardDeckIsEmpty();
@@ -19,10 +21,10 @@ public:
     Card GiveCardToPlayer();
 
 
-   // void Print();
+
 private:
     unsigned int deckCurrentPos;
-     Card deckCards[MAX_DECK_CARDS];
+     Card deckCards[MAX_DECKS_CARDS];
 
 };
 

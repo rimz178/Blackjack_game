@@ -10,7 +10,7 @@ using namespace std;
 class Player {
 
 public:
-    friend ostream& operator<< (ostream& os, const Player aPlayer);
+    friend ostream& operator << (ostream& os, const Player aPlayer);
 
     Player(const string UserName);
     Player();

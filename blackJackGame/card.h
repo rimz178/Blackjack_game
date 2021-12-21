@@ -6,11 +6,12 @@
 
 using namespace std;
 class Card {
+
 public:
     //Create ranks.
     enum Ranks {
       Ace =1,
-      Two = 2,
+      Two  ,
       Three ,
       Four ,
       Five ,
@@ -32,7 +33,7 @@ public:
           Spades,
        };
 
-    friend ostream& operator<< (ostream& os, const Card aCard);
+    friend ostream& operator<< (ostream& os, const Card Cardss);
     Card(Ranks r = Ace, Suits s = Spades, bool cardfaceup=true);
      ~Card();
     unsigned int GetCardValue() const;
@@ -46,7 +47,7 @@ public:
 private:
     Ranks cardRank;
     Suits cardSuit;
-   bool cardIsFaceUp;
+    bool cardIsFaceUp;
 };
 
 #endif // CARD_H

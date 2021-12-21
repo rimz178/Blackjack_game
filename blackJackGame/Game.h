@@ -11,10 +11,10 @@ using namespace std;
 class Game {
 
 public:
-    Game(string s );
+    Game(string set );
     ~Game();
-    void play();
-    void ShowTable();
+    void playGame();
+    void ShowTables();
     void AnnounceWinner();
     void IfDeckIsEmpty();
     void clearGame();
