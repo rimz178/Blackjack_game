@@ -29,15 +29,15 @@ int main() {
 
 ostream& operator<< (ostream& os, const Card aCard)
 {
-    const string Ranks[] = {" 0 ", "A", "2", " 3 ", " 4 ", " 5 ", " 6 ", " 7 ", " 8 ", " 9 ", " 10 ",
+    const string RANKS[] = {"0", " A ", " 2 ", " 3 ", " 4 ", " 5 ", " 6 ", " 7 ", " 8 ", " 9 ", " 10 ",
                             " J ", " Q " , " K "};
 
     if (aCard.cardIsFaceUp) {
-        os << Ranks[aCard.cardRank] <<  (char) aCard.cardSuit << "\t";
+        os << RANKS[aCard.cardRank] <<  (char) aCard.cardSuit << "\t";
     }
     else {
 
-        os << "XX" << "\t";
+        os << " XX " << "\t";
     }
 
     return os;

@@ -17,7 +17,7 @@ unsigned int Card:: GetCardValue() const {
         cardValue = cardRank;
 
         if(cardValue > 10 )
-            cardValue=10;
+            cardValue = 10;
     }
     return cardValue;
 }

@@ -7,7 +7,7 @@
 using namespace std;
 
 
-Hand::Hand(unsigned int hPos, unsigned int pPos) :handCurrentPos(hPos),playerCardPos(pPos)
+Hand::Hand(unsigned int hPos, unsigned int pPos):handCurrentPos(hPos),playerCardPos(pPos)
 {
 
 }

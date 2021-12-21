@@ -80,9 +80,9 @@ void::Game::ShowTable() {
 void Game::AnnounceWinner() {
     cout << endl;
     if (player1.getCardTotal() > 21)
-        cout << player1.getPlayerName() << " lose , Dealer Wins." << endl;
+        cout << player1.getPlayerName() << " lose ,Dealer Wins." << endl;
     else if (dealer.getCardTotal() > 21)
-        cout << dealer.getPlayerName() << "  lost, " << player1.getPlayerName() << " Wins!" << endl;
+        cout << dealer.getPlayerName() << " lose, " << player1.getPlayerName() << " Wins!" << endl;
     else if (player1.getCardTotal() == 21)
         cout << player1.getPlayerName() << " hit a BlackJack, " << player1.getPlayerName() << " Wins!" << endl;
     else if (dealer.getCardTotal() == 21)

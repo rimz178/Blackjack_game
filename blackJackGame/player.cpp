@@ -7,7 +7,7 @@ Player::Player(const string pName): UserName(pName) {
 
 Player::Player() {
 
-    UserName = " Dealer ";
+    UserName = "Dealer ";
 }
 
 Player::~Player() {
@@ -39,7 +39,7 @@ void Player::clear() {
 
 bool Player::isHitting() const {
 
-    if (UserName !=" Dealer ") {
+    if (UserName !="Dealer ") {
 
         cout << endl<< UserName << " Do you want to hit? (y/n)";
 
@@ -81,11 +81,5 @@ unsigned int Player::getPosition() const
 {
     return playerHand.GetHandLastPosition();
 }
-/*
-string Player::getPlayerName() const {
 
-    return UserName;
 
-}
-
-*/

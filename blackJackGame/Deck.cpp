@@ -40,7 +40,7 @@ void CardDeck::Shuffle(){
     srand(static_cast<unsigned int>(time(0)));
         for (unsigned int i = 0; i < (MAX_DECK_CARDS - 1); i++)
         {
-            int r = i + (rand() % (MAX_DECK_CARDS - i));
+            int r = i + (rand()  % (MAX_DECK_CARDS - i));
             Card tempCard = deckCards[i];
             deckCards[i] = deckCards[r];
             deckCards[r] = tempCard;
@@ -51,7 +51,7 @@ void CardDeck::Shuffle(){
 
 bool CardDeck::CardDeckIsEmpty() {
 
-    return (deckCurrentPos <=0);
+    return (deckCurrentPos <= 0);
 }
 
 void CardDeck::AddCardToDeck(Card pCard) {
