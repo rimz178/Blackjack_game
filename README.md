@@ -1,6 +1,6 @@
 Blackjack Peli
 
-**Yleistietoa**
+****Yleistietoa****
 
 Kyseessä on perinteinen Komentorivillä pelattava Blacjack peli.  Pelin tavoitteena on saada korttien summaksi 21 tai päästä mahdollisimman lähelle sitä. Pelaat jakajaa(Dealer) vastaan, jos pääset lähemmäs 21 kuin jakaja tai saat 21 voitat pelin. Pelin alussa jakaja jakaa kaksi korttia pelaajalle kuva ylöspäin, ja itselleen kaksi korttia, joista toisen kuvapuoli on alaspäin ja toinen ylöspäin.
 
