@@ -10,14 +10,14 @@ int main() {
 
     string name;
     char ans = 'y';
-    cout << "What are you name? ";
+    cout << "What is your name? ";
     cin >> name;
 
     Game *Gamess = new Game(name);
 
     while (ans == 'y' || ans == 'Y') {
         Gamess->playGames();
-        cout << "\n Do you have play again? (y/n): ";
+        cout << "\n Do you want to play again? (y/n): ";
         cin >> ans;
     }
 

@@ -23,11 +23,10 @@ bool Player::isHittings() const {
 
     if (UserName !="Dealer ") {
 
-        cout << endl<< UserName << "\n Do you want to hit, one more card? (y/n) ";
-
+        cout << endl<< UserName << "\n Do you want to hit one more card? (y/n) ";
         char response;
         cin >> response;
-        return (response == 'y'|| response == 'Y');
+        return (response == 'y'|| response == 'n');
     }
     else  {
 
