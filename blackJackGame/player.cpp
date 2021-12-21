@@ -14,6 +14,27 @@ Player::~Player() {
 
 }
 
+
+/* This function asks if the player wants more cards
+ * and check if  the player or dealer is still
+ * Dealer case if the card value is <= 16  then we continue giving cards.
+*/
+bool Player::isHittings() const {
+
+    if (UserName !="Dealer ") {
+
+        cout << endl<< UserName << "\n Do you want to hit, one more card? (y/n) ";
+
+        char response;
+        cin >> response;
+        return (response == 'y'|| response == 'Y');
+    }
+    else  {
+
+        return (playerHand.GetHandTotal()<= 16);
+    }
+}
+
 // This function set player name
 void Player:: setPlayerName(string name) {
 
@@ -36,25 +57,7 @@ void Player::clear() {
 
     playerHand.ClearHand();
 }
-/* This function asks if the player wants more cards
- * and check if  the player or dealer is still
- * Dealer case if the card value is <= 16  then we continue giving cards.
-*/
-bool Player::isHitting() const {
 
-    if (UserName !="Dealer ") {
-
-        cout << endl<< UserName << "\n Do you want to hit, one more card? (y/n) ";
-
-        char response;
-        cin >> response;
-        return (response == 'y'|| response == 'Y');
-    }
-    else  {
-
-        return (playerHand.GetHandTotal()<= 16);
-    }
-}
 // This function flip the dealer*´s first card
 void Player::FlipDealerFirstCard() {
 

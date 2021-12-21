@@ -1,30 +1,29 @@
 #include "Deck.h"
 #include <iostream>
 #include <algorithm>
-#include <vector>
 #include <ctime>
 using namespace std;
 
 
-CardDeck::CardDeck(unsigned int dPos) : deckCurrentPos(dPos) {
+CardDeck::CardDeck(unsigned int dPos) : deckCurrentt(dPos) {
 
     ClearedDeck();
     PopulateDeck();
-    Shuffle();
+    ShuffleCard();
 }
 //empty destructor
 CardDeck::~CardDeck(){
 
 }
 // This set current position in the array
-unsigned int CardDeck::CurrentPosition() {
+unsigned int CardDeck::CurrentPos() {
 
-    return deckCurrentPos;
+    return deckCurrentt;
 }
 //This reset position in the array
 void CardDeck::ClearedDeck() {
 
-    deckCurrentPos = 0;
+    deckCurrentt = 0;
 }
 // This function create an array of card objects
 void CardDeck::PopulateDeck() {
@@ -33,13 +32,13 @@ void CardDeck::PopulateDeck() {
 
         for (int r = Card::Ace; r <= Card::King; r++) {
 
-            AddCardToDeck(Card(static_cast<Card::Ranks>(r),
+            AddCard(Card(static_cast<Card::Ranks>(r),
                                static_cast<Card::Suits>(s)));
       }
    }
 }
 // This function shuffle the array of cards
-void CardDeck::Shuffle(){
+void CardDeck::ShuffleCard(){
     srand(static_cast<unsigned int>(time(0)));
         for (unsigned int i = 0; i < (MAX_DECKS_CARDS - 1); i++) {
             int r = i + (rand()  % (MAX_DECKS_CARDS - i));
@@ -53,24 +52,24 @@ void CardDeck::Shuffle(){
 // This  function check if we have empty deck
 bool CardDeck::CardDeckIsEmpty() {
 
-    return (deckCurrentPos <= 0);
+    return (deckCurrentt <= 0);
 }
 // This function helper function to PopulateDeck()
-void CardDeck::AddCardToDeck(Card pCard) {
+void CardDeck::AddCard(Card pCard) {
 
-    deckCards[deckCurrentPos++]= pCard;
+    deckCards[deckCurrentt++]= pCard;
 }
 // This function start dealing card from the last index
-Card CardDeck::GiveCardToPlayer() {
+Card CardDeck::GiveCard() {
 
     if(!CardDeckIsEmpty())
 
-        return deckCards[--deckCurrentPos];
+        return deckCards[--deckCurrentt];
      else {
         // then when the cards rans out re-shuffle the deck
-        deckCurrentPos =MAX_DECKS_CARDS;
-        Shuffle();
-        return deckCards[--deckCurrentPos];
+        deckCurrentt =MAX_DECKS_CARDS;
+        ShuffleCard();
+        return deckCards[--deckCurrentt];
      }
 
 }

@@ -13,15 +13,16 @@ class Game {
 public:
     Game(string set );
     ~Game();
-    void playGame();
+    void IfDeckEmpty();
+    void playGames();
     void ShowTables();
-    void AnnounceWinner();
-    void IfDeckIsEmpty();
-    void clearGame();
+    void WhoWinners();
+
+    void clearCam();
 
 private:
     string name;
-    CardDeck *gameDeck;
+    CardDeck *GameDecks;
     Player dealer;
     Player player1;
 };

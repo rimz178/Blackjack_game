@@ -16,7 +16,7 @@ int main() {
     Game *Gamess = new Game(name);
 
     while (ans == 'y' || ans == 'Y') {
-        Gamess->playGame();
+        Gamess->playGames();
         cout << "\n Do you have play again? (y/n): ";
         cin >> ans;
     }
@@ -32,7 +32,7 @@ ostream& operator<< (ostream& os, Player aPlayer) {
 
     if (! aPlayer.isEmpty()){
         for (int i = aPlayer.playerHand.GetHandLastPosition(); i >= 0; i--)
-            os << aPlayer.playerHand.RetrieveCard();
+            os << aPlayer.playerHand.RetrieveCards();
 
         if (aPlayer.getCardTotal() != 0)
             cout << "[" << aPlayer.getCardTotal() << "]";

@@ -1,7 +1,6 @@
 #ifndef PLAYER_H
 #define PLAYER_H
 #include<iostream>
-#include <vector>
 #include <card.h>
 #include <hand.h>
 #include<string>
@@ -20,7 +19,7 @@ public:
     string  getPlayerName() const;
     void setPlayerName(string name);
     bool isEmpty();
-    bool isHitting() const;
+    bool isHittings() const;
     void FlipDealerFirstCard();
     void ReceiveCard(Card PlayerCard);
     bool isBusted() const;

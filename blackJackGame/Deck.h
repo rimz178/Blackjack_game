@@ -2,7 +2,7 @@
 #define DECK_H
 
 #include <card.h>
-#include <vector>
+
 
 // set max hand cards and max deck cards
 const unsigned int MAX_HANDS_CARDS = 10;
@@ -14,17 +14,17 @@ public:
     ~CardDeck();
     void ClearedDeck();
     void PopulateDeck();
-    void Shuffle();
+    void ShuffleCard();
     bool CardDeckIsEmpty();
-    void AddCardToDeck(Card pCard);
-    unsigned int CurrentPosition();
-    Card GiveCardToPlayer();
+    void AddCard(Card pCard);
+    unsigned int CurrentPos();
+    Card GiveCard();
 
 
 
 private:
-    unsigned int deckCurrentPos;
-     Card deckCards[MAX_DECKS_CARDS];
+    unsigned int deckCurrentt;
+    Card deckCards[MAX_DECKS_CARDS];
 
 };
 

@@ -10,13 +10,14 @@ public:
     Hand(unsigned int hPos= 0, unsigned int pPos=0);
     ~Hand();
     void ClearHand();
+    unsigned int GetHandTotal() const;
+    unsigned int GetHandLastPosition()const;
     void FlipFirstCardI();
     bool HandIsEmpty();
     bool HandIsFull();
-    Card RetrieveCard();
+    Card RetrieveCards();
     void AddCardToHand(Card handCard);
-    unsigned int GetHandTotal() const;
-    unsigned int GetHandLastPosition()const;
+
 
 private:
     unsigned int handCurrentPos;

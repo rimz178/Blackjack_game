@@ -7,29 +7,29 @@ using namespace std;
 
 Game::Game(string set ): name(set) {
 
-    gameDeck = new CardDeck(0);
+    GameDecks = new CardDeck(0);
     player1.setPlayerName(name);
 
 }
 // This function game destructor
 Game:: ~ Game() {
 
-    delete gameDeck;
+    delete GameDecks;
 }
 // This function make Blackjack rules/logic
-void Game:: playGame() {
+void Game:: playGames() {
 
     //this check always if we have empty deck
-    if (gameDeck -> CardDeckIsEmpty()) {
+    if (GameDecks -> CardDeckIsEmpty()) {
 
-        IfDeckIsEmpty();
+        IfDeckEmpty();
     }
     else {
        // This deal 2 cards at first
       for(int i = 0; i < 2; i++) {
 
-          player1.ReceiveCard(gameDeck ->GiveCardToPlayer());
-          dealer.ReceiveCard(gameDeck -> GiveCardToPlayer());
+          player1.ReceiveCard(GameDecks ->GiveCard());
+          dealer.ReceiveCard(GameDecks -> GiveCard());
       }
 
       // This hide dealer's first card
@@ -39,14 +39,14 @@ void Game:: playGame() {
       ShowTables();
     }
     // This give more cards from deck
-    while (!player1.isBusted() && player1.isHitting()){
+    while (!player1.isBusted() && player1.isHittings()){
 
-        if (gameDeck -> CardDeckIsEmpty()) {
+        if (GameDecks -> CardDeckIsEmpty()) {
 
-            IfDeckIsEmpty();
+            IfDeckEmpty();
         }
         else {
-            player1.ReceiveCard(gameDeck -> GiveCardToPlayer());
+            player1.ReceiveCard(GameDecks -> GiveCard());
             ShowTables();
         }
     }
@@ -54,23 +54,23 @@ void Game:: playGame() {
     dealer.FlipDealerFirstCard();
 
     //  dealer's turn pick  a card
-    while (!dealer.isBusted() && dealer.isHitting()) {
+    while (!dealer.isBusted() && dealer.isHittings()) {
 
-        if(gameDeck ->CardDeckIsEmpty()) {
+        if(GameDecks ->CardDeckIsEmpty()) {
 
-            IfDeckIsEmpty();
+            IfDeckEmpty();
 
         }
 
 
-        dealer.ReceiveCard(gameDeck->GiveCardToPlayer());
+        dealer.ReceiveCard(GameDecks->GiveCard());
     }
      // This shown the cards and show who wins the game
-   if (!gameDeck -> CardDeckIsEmpty()) {
+   if (!GameDecks -> CardDeckIsEmpty()) {
 
        ShowTables();
-       AnnounceWinner();
-       clearGame();
+       WhoWinners();
+       clearCam();
    }
  }
 // This show players and cards
@@ -89,7 +89,7 @@ void::Game::ShowTables() {
      cout << left <<  player1.getPlayerName() << player1 << endl;
 }
 // this show who won the game
-void Game::AnnounceWinner() {
+void Game::WhoWinners() {
     cout << endl;
     if (player1.getCardTotal() > 21)
         cout << player1.getPlayerName() << " lose! Bad luck! Dealer Wins." << endl;
@@ -108,13 +108,13 @@ void Game::AnnounceWinner() {
 }
 
 // This  check if deck is empty and creates a new deck
-void Game::IfDeckIsEmpty() {
-    delete gameDeck;
-    gameDeck = new CardDeck(0);
+void Game::IfDeckEmpty() {
+    delete GameDecks;
+    GameDecks = new CardDeck(0);
 }
 
 // This reset game
-void Game::clearGame() {
+void Game::clearCam() {
     dealer.clear();
     player1.clear();
 }

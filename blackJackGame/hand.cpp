@@ -2,7 +2,6 @@
 #include <card.h>
 #include <iostream>
 #include <algorithm>
-#include <vector>
 #include <ctime>
 using namespace std;
 
@@ -36,12 +35,7 @@ bool Hand:: HandIsFull() {
     return (handCurrentPos >= MAX_HANDS_CARDS);
 
 }
-// This function retrieve card from hand
-Card Hand::RetrieveCard() {
 
-    return handCards[playerCardPos++];
-
-}
 // This function add a card from deck
 void Hand:: AddCardToHand(Card handCard) {
 
@@ -49,6 +43,12 @@ void Hand:: AddCardToHand(Card handCard) {
 
         handCards[handCurrentPos++]=handCard;
     }
+}
+// This function retrieve card from hand
+Card Hand::RetrieveCards() {
+
+    return handCards[playerCardPos++];
+
 }
 // This function get hand total value
 unsigned int Hand::GetHandTotal() const {
