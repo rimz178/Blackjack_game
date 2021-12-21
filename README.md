@@ -23,6 +23,7 @@ Kun olet avanut BlacJackGame-tiedoston koodieditorilla. Ajamalla tiedoston avaut
 
 Nyt Peli kysyy Pelaajalta haluaako pelajaa uuden kortin. Komentoriville Syöttämällä tiedot peli jatkuu nii kauan kuin pelaaja ei haluaa enään kortteja tai korttien summa on yli 21.
 
-![image](https://user-images.githubusercontent.com/62377839/146926472-843e0f92-c0d1-4a2c-acc6-fc7b7df17ad0.png)
+![image](https://user-images.githubusercontent.com/62377839/146927274-c4d31b25-2951-4b72-933e-204ae5b337e4.png)
+
 
 Kun pelaaja on tehnyt päätöksen mitä haluaa tehdä, peli kertoo kumpi voittaa ja kysyy haluaako pelaaja pelaa uudestaan.
