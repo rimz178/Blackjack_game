@@ -2,7 +2,7 @@ Blackjack Peli
 
 **Yleistietoa**
 
-Kyseessä on perinteinen Komentorivillä pelattava Blacjack peli.  Pelin tavoitteena on saada korttien summaksi 21 tai päästä mahdollisimman lähelle sitä. Pelaat jakajaa(Dealer) vastaan, jos pääset lähemmäs 21 kuin jakaja tai saat 21 voitat pelin. Pelin alussa jakaja jakaa kaksi korttia pelaajalle kuva ylöspäin, ja itselleen kaksi korttia, joista toisen kuvapuoli on alaspäin ja toisen ylöspäin.
+Kyseessä on perinteinen Komentorivillä pelattava Blacjack peli.  Pelin tavoitteena on saada korttien summaksi 21 tai päästä mahdollisimman lähelle sitä. Pelaat jakajaa(Dealer) vastaan, jos pääset lähemmäs 21 kuin jakaja tai saat 21 voitat pelin. Pelin alussa jakaja jakaa kaksi korttia pelaajalle kuva ylöspäin, ja itselleen kaksi korttia, joista toisen kuvapuoli on alaspäin ja toinen ylöspäin.
 
 
 
@@ -13,7 +13,7 @@ Pelin lataaminen onnistuu lataamalla BlackJackGame tiedosto koneelle ja tarvitse
 
 **Pelin pelaaminen**
 
-Kun olet avanut BlacJackGame tiedostot koodieditorilla Ajamalla tiedoston avautuu näytölle komentorivi. Pelin käynnistyessä peli kysyy pelaajalta nimeä. 
+Kun olet avanut BlacJackGame-tiedoston koodieditorilla. Ajamalla tiedoston avautuu näytölle komentorivi, pelin käynnistyessä peli kysyy pelaajalta nimeä. 
 
 ![image](https://user-images.githubusercontent.com/62377839/146925526-43d00cf1-93ab-41ee-8ffa-c4a72d30a931.png)
 
@@ -21,4 +21,8 @@ Kun olet avanut BlacJackGame tiedostot koodieditorilla Ajamalla tiedoston avautu
  
  ![image](https://user-images.githubusercontent.com/62377839/146925976-aebfe1f2-441a-436c-b464-c39d8124981e.png)
 
-Nyt Peli kysyy Pelaajalta haluaako pelajaa uuden kortin.
+Nyt Peli kysyy Pelaajalta haluaako pelajaa uuden kortin. Komentoriville Syöttämällä tiedot peli jatkuu nii kauan kuin pelaaja ei haluaa enään kortteja tai korttien summa on yli 21.
+
+![image](https://user-images.githubusercontent.com/62377839/146926472-843e0f92-c0d1-4a2c-acc6-fc7b7df17ad0.png)
+
+Kun pelaaja on tehnyt päätöksen mitä haluaa tehdä, peli kertoo kumpi voittaa ja kysyy haluaako pelaaja pelaa uudestaan.
