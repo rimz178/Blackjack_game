@@ -1,1 +1,29 @@
-Blackjack_game
+Blackjack-korttipeli
+
+****Yleistietoa****
+
+Kyseessä on perinteinen komentorivillä pelattava Blacjack-peli.  Pelin tavoitteena on saada korttien summaksi 21 tai päästä mahdollisimman lähelle sitä. Peliä pelataan jakajaa (Dealer) vastaan. Pelin alussa jakaja jakaa kaksi korttia pelaajalle kuvapuoli ylöspäin, ja itselleen kaksi korttia, joista toisen kuvapuoli on alaspäin ja toinen ylöspäin. Tämän jälkeen pelaaja voi ottaa lisää kortteja, jotta yhteen laskettu summa olisi suurempi. Pelaaja voittaa pelin, mikäli korttien yhteenlaskettu summa on suurempi kuin jakajan korttien summa tai tasan 21. Jos pelaajan korttien summa menee yli 21, pelaaja häviää ja jakaja voittaa. 
+
+
+
+**Pelin (kooditiedoston) lataaminen koneelle**
+
+Pelin lataaminen onnistuu lataamalla BlackJackGame -tiedosto koneelle. Lataamiseen tarvitaan jokin koodieditori esimerkiksi (Visual studio code, Qt Creator).
+
+
+**Pelin pelaaminen**
+
+Avaa BlackJackGame -tiedosto koodieditorilla. Ajamalla tiedoston avautuu näytölle komentorivi, pelin käynnistyessä peli kysyy pelaajalta nimeä. 
+
+![image](https://user-images.githubusercontent.com/62377839/146967372-e61d2218-3956-4c0f-b0a9-5e8b26836279.png)
+
+Kun pelaaja on syöttänyt nimen, peli käynnistyy ja jakaja jakaa ensimmäiset kortit pelaajalle ja itselleen.
+ 
+![image](https://user-images.githubusercontent.com/62377839/146966952-f508319d-02b0-4a70-9138-eb9b832b6405.png)
+
+
+Peli kysyy pelaajalta, haluaako pelaaja uuden kortin. Syöttämällä komentoriville tiedot, peli jatkuu kunnes pelaaja ei halua enempää kortteja tai korttien summa ylittää 21.
+
+![image](https://user-images.githubusercontent.com/62377839/146967064-d52a6dc8-8fb3-4b46-92b0-542f62d9ee8a.png)
+
+Kun pelaaja ei halua enempää kortteja tai korttien summa ylittää 21, peli kertoo kumpi, voittaa ja kysyy haluaako pelaaja pelata uudelleen.
