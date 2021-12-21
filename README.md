@@ -1,29 +1,29 @@
-Blackjack Peli
+Blackjack-korttipeli
 
 ****Yleistietoa****
 
-Kyseessä on perinteinen Komentorivillä pelattava Blacjack peli.  Pelin tavoitteena on saada korttien summaksi 21 tai päästä mahdollisimman lähelle sitä. Pelaat jakajaa(Dealer) vastaan, jos pääset lähemmäs 21 kuin jakaja tai saat 21 voitat pelin. Pelin alussa jakaja jakaa kaksi korttia pelaajalle kuva ylöspäin, ja itselleen kaksi korttia, joista toisen kuvapuoli on alaspäin ja toinen ylöspäin.
+Kyseessä on perinteinen komentorivillä pelattava Blacjack-peli.  Pelin tavoitteena on saada korttien summaksi 21 tai päästä mahdollisimman lähelle sitä. Peliä pelataan jakajaa (Dealer) vastaan. Pelin alussa jakaja jakaa kaksi korttia pelaajalle kuvapuoli ylöspäin, ja itselleen kaksi korttia, joista toisen kuvapuoli on alaspäin ja toinen ylöspäin. Tämän jälkeen pelaaja voi ottaa lisää kortteja, jotta yhteen laskettu summa olisi suurempi. Pelaaja voittaa pelin, mikäli korttien yhteenlaskettu summa on suurempi kuin jakajan korttien summa tai tasan 21. Jos pelaajan korttien summa menee yli 21, pelaaja häviää ja jakaja voittaa. 
 
 
 
 **Pelin (kooditiedoston) lataaminen koneelle**
 
-Pelin lataaminen onnistuu lataamalla BlackJackGame tiedosto koneelle ja tarvitset jonkun koodi editorin esimerkikse (Visual studio code, Qt Creator).
+Pelin lataaminen onnistuu lataamalla BlackJackGame -tiedosto koneelle. Lataamiseen tarvitaan jokin koodieditori esimerkiksi (Visual studio code, Qt Creator).
 
 
 **Pelin pelaaminen**
 
-Kun olet avanut BlacJackGame-tiedoston koodieditorilla. Ajamalla tiedoston avautuu näytölle komentorivi, pelin käynnistyessä peli kysyy pelaajalta nimeä. 
+Avaa BlackJackGame -tiedosto koodieditorilla. Ajamalla tiedoston avautuu näytölle komentorivi, pelin käynnistyessä peli kysyy pelaajalta nimeä. 
 
 ![image](https://user-images.githubusercontent.com/62377839/146925526-43d00cf1-93ab-41ee-8ffa-c4a72d30a931.png)
 
- Seuraavaksi kun on annettu nimi peli käynnistyy ja jakaja jakaa ensimmäiset kortit pelaajalle ja itselleen.
+Kun pelaaja on syöttänyt nimen, peli käynnistyy ja jakaja jakaa ensimmäiset kortit pelaajalle ja itselleen.
  
  ![image](https://user-images.githubusercontent.com/62377839/146925976-aebfe1f2-441a-436c-b464-c39d8124981e.png)
 
-Nyt Peli kysyy Pelaajalta haluaako pelajaa uuden kortin. Komentoriville Syöttämällä tiedot peli jatkuu nii kauan kuin pelaaja ei haluaa enään kortteja tai korttien summa on yli 21.
+Peli kysyy pelaajalta, haluaako pelaaja uuden kortin. Syöttämällä komentoriville tiedot, peli jatkuu kunnes pelaaja ei halua enempää kortteja tai korttien summa ylittää 21.
 
 ![image](https://user-images.githubusercontent.com/62377839/146927484-e39c312e-a23e-4ca4-9279-67105aaa05c5.png)
 
 
-Kun pelaaja on tehnyt päätöksen mitä haluaa tehdä, peli kertoo kumpi voittaa ja kysyy haluaako pelaaja pelaa uudestaan.
+Kun pelaaja ei halua enempää kortteja tai korttien summa ylittää 21, peli kertoo kumpi, voittaa ja kysyy haluaako pelaaja pelata uudelleen.
