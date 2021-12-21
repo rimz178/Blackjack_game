@@ -15,15 +15,16 @@ Pelin lataaminen onnistuu lataamalla BlackJackGame -tiedosto koneelle. Lataamise
 
 Avaa BlackJackGame -tiedosto koodieditorilla. Ajamalla tiedoston avautuu näytölle komentorivi, pelin käynnistyessä peli kysyy pelaajalta nimeä. 
 
-![image](https://user-images.githubusercontent.com/62377839/146925526-43d00cf1-93ab-41ee-8ffa-c4a72d30a931.png)
+![image](https://user-images.githubusercontent.com/62377839/146966842-bd579107-6c41-4bd8-843f-fa547e2d958e.png)
+
 
 Kun pelaaja on syöttänyt nimen, peli käynnistyy ja jakaja jakaa ensimmäiset kortit pelaajalle ja itselleen.
  
- ![image](https://user-images.githubusercontent.com/62377839/146925976-aebfe1f2-441a-436c-b464-c39d8124981e.png)
+![image](https://user-images.githubusercontent.com/62377839/146966952-f508319d-02b0-4a70-9138-eb9b832b6405.png)
+
 
 Peli kysyy pelaajalta, haluaako pelaaja uuden kortin. Syöttämällä komentoriville tiedot, peli jatkuu kunnes pelaaja ei halua enempää kortteja tai korttien summa ylittää 21.
 
-![image](https://user-images.githubusercontent.com/62377839/146927484-e39c312e-a23e-4ca4-9279-67105aaa05c5.png)
-
+![image](https://user-images.githubusercontent.com/62377839/146967064-d52a6dc8-8fb3-4b46-92b0-542f62d9ee8a.png)
 
 Kun pelaaja ei halua enempää kortteja tai korttien summa ylittää 21, peli kertoo kumpi, voittaa ja kysyy haluaako pelaaja pelata uudelleen.
