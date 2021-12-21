@@ -26,7 +26,7 @@ bool Player::isHittings() const {
         cout << endl<< UserName << "\n Do you want to hit one more card? (y/n) ";
         char response;
         cin >> response;
-        return (response == 'y'|| response == 'n');
+        return (response == 'y'|| response == 'Y');
     }
     else  {
 
