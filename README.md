@@ -15,7 +15,7 @@ Pelin lataaminen onnistuu lataamalla BlackJackGame -tiedosto koneelle. Lataamise
 
 Avaa BlackJackGame -tiedosto koodieditorilla. Ajamalla tiedoston avautuu näytölle komentorivi, pelin käynnistyessä peli kysyy pelaajalta nimeä. 
 
-![image](https://user-images.githubusercontent.com/62377839/146967372-e61d2218-3956-4c0f-b0a9-5e8b26836279.png)
+![image](https://user-images.githubusercontent.com/62377839/148910095-307ea52f-ef51-4e95-a570-21b498fb9b4a.png)
 
 Kun pelaaja on syöttänyt nimen, peli käynnistyy ja jakaja jakaa ensimmäiset kortit pelaajalle ja itselleen.
  
