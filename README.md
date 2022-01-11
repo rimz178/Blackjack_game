@@ -24,6 +24,7 @@ Kun pelaaja on syöttänyt nimen, peli käynnistyy ja jakaja jakaa ensimmäiset 
 
 Peli kysyy pelaajalta, haluaako pelaaja uuden kortin. Syöttämällä komentoriville tiedot, peli jatkuu kunnes pelaaja ei halua enempää kortteja tai korttien summa ylittää 21.
 
-![image](https://user-images.githubusercontent.com/62377839/146967064-d52a6dc8-8fb3-4b46-92b0-542f62d9ee8a.png)
+![image](https://user-images.githubusercontent.com/62377839/148909977-a0ebf0e7-a19c-49dd-9f91-21e3bebbff29.png)
+
 
 Kun pelaaja ei halua enempää kortteja tai korttien summa ylittää 21, peli kertoo kumpi, voittaa ja kysyy haluaako pelaaja pelata uudelleen.
