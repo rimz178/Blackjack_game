@@ -19,7 +19,7 @@ Avaa BlackJackGame -tiedosto koodieditorilla. Ajamalla tiedoston avautuu näytö
 
 Kun pelaaja on syöttänyt nimen, peli käynnistyy ja jakaja jakaa ensimmäiset kortit pelaajalle ja itselleen.
  
-![image](https://user-images.githubusercontent.com/62377839/146966952-f508319d-02b0-4a70-9138-eb9b832b6405.png)
+![image](https://user-images.githubusercontent.com/62377839/148909814-b56ade14-1a99-48d7-8e97-0538dc76cb92.png)
 
 
 Peli kysyy pelaajalta, haluaako pelaaja uuden kortin. Syöttämällä komentoriville tiedot, peli jatkuu kunnes pelaaja ei halua enempää kortteja tai korttien summa ylittää 21.
