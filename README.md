@@ -1,17 +1,17 @@
 Blackjack-korttipeli
 
-#Yleistietoa
+# Yleistietoa
 
 Kyseessä on perinteinen komentorivillä pelattava Blacjack-peli.  Pelin tavoitteena on saada korttien summaksi 21 tai päästä mahdollisimman lähelle sitä. Peliä pelataan jakajaa (Dealer) vastaan. Pelin alussa jakaja jakaa kaksi korttia pelaajalle kuvapuoli ylöspäin, ja itselleen kaksi korttia, joista toisen kuvapuoli on alaspäin ja toinen ylöspäin. Tämän jälkeen pelaaja voi ottaa lisää kortteja, jotta yhteen laskettu summa olisi suurempi. Pelaaja voittaa pelin, mikäli korttien yhteenlaskettu summa on suurempi kuin jakajan korttien summa tai tasan 21. Jos pelaajan korttien summa menee yli 21, pelaaja häviää ja jakaja voittaa. 
 
 
 
-#Pelin (kooditiedoston) lataaminen koneelle
+# Pelin (kooditiedoston) lataaminen koneelle
 
 Pelin lataaminen onnistuu lataamalla BlackJackGame -tiedosto koneelle. Lataamiseen tarvitaan jokin koodieditori esimerkiksi (Visual studio code, Qt Creator).
 
 
-#Pelin pelaaminen
+# Pelin pelaaminen
 
 Avaa BlackJackGame -tiedosto koodieditorilla. Ajamalla tiedoston avautuu näytölle komentorivi, pelin käynnistyessä peli kysyy pelaajalta nimeä. 
 
